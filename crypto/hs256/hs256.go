@@ -15,5 +15,6 @@ func CheckHS256(msg []byte, sig []byte, key []byte) error {
 	if !bytes.Equal(bs, sig) {
 		return errors.New("signature not matched")
 	}
+
 	return nil
 }
